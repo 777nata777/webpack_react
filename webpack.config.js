@@ -26,9 +26,26 @@ module.exports = (env) => {
 
         module: {
             rules: [
-
+                // CSS Modules для SCSS
+                {
+                    test: /\.module\.s[ac]ss$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: "css-loader",
+                            options: {
+                                modules: {
+                                    localIdentName: "[path][name]__[local]--[hash:base64:5]",
+                                },
+                            },
+                        },
+                        "sass-loader",
+                    ],
+                },
+                // Обычные SCSS (без модулей)
                 {
                     test: /\.s[ac]ss$/i,
+                    exclude: /\.module\.s[ac]ss$/i,
                     use: [
                         // Creates `style` nodes from JS strings
                         MiniCssExtractPlugin.loader,
