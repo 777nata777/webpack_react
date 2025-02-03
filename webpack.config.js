@@ -21,11 +21,23 @@ module.exports = (env) => {
             new MiniCssExtractPlugin({
                 filename: 'css/[name].[contenthash:8].css',
                 chunkFilename: 'css/[name].[contenthash:8].css'
-            })
+            }),
+
         ],
 
         module: {
             rules: [
+                {
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/resource',
+                },
+                {
+                    test: /\.css$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        "css-loader"
+                    ],
+                },
                 // CSS Modules для SCSS
                 {
                     test: /\.module\.s[ac]ss$/i,
@@ -68,6 +80,13 @@ module.exports = (env) => {
 
         resolve: {
             extensions: ['.js', '.jsx'], // Автоматически подставлять эти расширения
+            alias: {
+                '@components': path.resolve(__dirname, 'src/components'),
+                '@pages': path.resolve(__dirname, 'src/pages'),
+                '@styles': path.resolve(__dirname, 'src/styles'),
+                '@utils': path.resolve(__dirname, 'src/utils'),
+            }
+
         },
 
         devtool: 'inline-source-map', // отслеживаем ошибки
@@ -76,6 +95,7 @@ module.exports = (env) => {
             port: 4000,
             open: true,
             hot: true,
+            historyApiFallback: true // важно для работы с React Router
         }
     }
 };
