@@ -1,56 +1,34 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import { motion } from "framer-motion";
-import *as styles from "./Home.module.css"; // ✅ Используем CSS-модули
+import * as styles from "./Home.module.css";
+import Header from "@pages/home/header/Header";
+import Slider from "@pages/home/slider/Sliders";
 
-import img1 from "../../assets/home/1.jpg";
-import img2 from "../../assets/home/2.jpg";
-import img3 from "../../assets/home/3.jpg";
+import img1 from '../../assets/home/1.jpg';
+import img2 from '../../assets/home/2.jpg';
+import img3 from '../../assets/home/3.jpg';
+import img4 from '../../assets/home/4.jpg';
+import img5 from '../../assets/home/5.jpg';
+import img6 from '../../assets/home/6.jpg';
+import img7 from '../../assets/home/7.jpg';
+import img8 from '../../assets/home/8.jpg';
+import img9 from '../../assets/home/9.jpg';
+import img10 from '../../assets/home/10.jpg';
+import img11 from '../../assets/home/11.jpg';
+import img12 from '../../assets/home/12.jpg';
+import img13 from '../../assets/home/13.jpg';
 
-import "swiper/css";
-import "swiper/css/navigation";
 
-const images = [img1, img2, img3];
-
-const menuItems = [
-    "Дома",
-    "Общественные здания",
-    "Проекты застройки",
-    "Интерьер",
-    "Благоустройство",
-    "Контакты",
-];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13];
 
 const Home = () => {
     return (
         <div className={styles.container}>
             {/* Левое меню */}
-            <motion.nav className={styles.sidebar}>
-                <h1>ARH/DIZ</h1>
-                <ul>
-                    {menuItems.map((item, index) => (
-                        <li key={index}>
-                            <a href="#">{item}</a>
-                        </li>
-                    ))}
-                </ul>
-            </motion.nav>
+            <Header></Header>
 
             {/* Слайдер */}
-            <Swiper
-                className={styles.slider}
-                modules={[Navigation, Autoplay]}
-                navigation
-                autoplay={{ delay: 3000 }}
-                loop
-            >
-                {images.map((src, index) => (
-                    <SwiperSlide key={index}>
-                        <img src={src} alt={`Slide ${index}`} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <Slider images={images} />
+
         </div>
     );
 };
