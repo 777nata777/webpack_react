@@ -1,7 +1,6 @@
 import React from "react";
 import * as styles from "./MainPage.module.css";
-import Header from "@pages/main_page/header/Header";
-import Slider from "@pages/main_page/slider/Sliders";
+import Slider from "@pages/mainPage/slider/Sliders";
 
 import img1 from '../../assets/home/1.jpg';
 import img2 from '../../assets/home/2.jpg';
@@ -23,14 +22,8 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img
 const MainPage = () => {
     return (
         <div className={styles.container}>
-            {/* Левое меню */}
-            <Header />
-
-            {/* Слайдер */}
             <Slider images={images} />
-
         </div>
-    );
-};
+    );};
 
 export default MainPage;
