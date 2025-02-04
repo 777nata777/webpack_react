@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import *as styles from "./Sliders.module.css";
+import * as styles from "./Sliders.module.css";
 
 const Slider = ({ images, interval = 3000 }) => {
     // Храним индекс текущего слайда

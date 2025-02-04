@@ -3,7 +3,7 @@ import './App.scss';
 import {Route, Routes} from "react-router-dom";
 
 // Лениво загружаем страницы (Lazy loading)
-const Home = React.lazy(() => import('@pages/home/Home'));
+const Home = React.lazy(() => import('@pages/main_page/MainPage'));
 
 
 const App = () => {

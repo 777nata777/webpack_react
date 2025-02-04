@@ -1,0 +1,42 @@
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1; /* Поверх слайдера */
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.navList {
+    list-style: none;
+    padding: 20px;
+}
+
+.navList li {
+    margin-bottom: 20px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navList a:hover {
+    color: #007bff;
+}
