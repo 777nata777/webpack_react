@@ -1,11 +1,17 @@
 .teamMember {
     flex: 1 1 200px;
     text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px; /* Закругление углов */
+    background: white; /* Фон для контраста */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень вокруг карточки */
+
 }
 
 .teamMember img {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30%;
 }

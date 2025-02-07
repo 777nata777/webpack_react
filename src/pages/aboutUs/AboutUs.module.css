@@ -1,4 +1,3 @@
-/* src/pages/aboutUs/AboutUs.module.css */
 .aboutUs {
     padding: 20px;
     text-align: center; /* Центрирование текста внутри контейнера */
@@ -12,25 +11,36 @@ h1 {
 
 .team {
     display: flex;
-    margin-left: 300px;
-    flex-wrap: wrap;
+    margin-left: 370px;
     gap: 20px;
     justify-content: center; /* Центрируем команду по горизонтали */
 }
-
-
-
-
 
 .office {
     margin-top: 40px;
 }
 
+.officePhotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px; /* Отступ между изображениями */
+    justify-content: center; /* Центрирование */
+    align-items: center;
+    margin-top: 20px;
+}
+
 .officePhoto {
-    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
 }
 
 .officePhoto img {
-    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
     height: auto;
+    border-radius: 20px; /* Закругление углов */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Тень */
 }

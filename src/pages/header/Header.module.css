@@ -17,7 +17,7 @@
 }
 
 .transparent {
-    background: rgba(255, 255, 255, 0.3); /* Белый прозрачный */
+    background: rgba(255, 255, 255, 0.4); /* Белый прозрачный */
 }
 
 .black {
@@ -71,7 +71,7 @@
 .navList a.activeLink {
     font-weight: bold;
     text-decoration: none;
-    color: #ffcc00 !important; /* Добавляем !important, чтобы цвет не переопределялся */
+    color: #d0bd70 !important; /* Добавляем !important, чтобы цвет не переопределялся */
 }
 
 .navList a:hover {
