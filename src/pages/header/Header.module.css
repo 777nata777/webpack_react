@@ -13,31 +13,25 @@
     flex-direction: column;
     align-items: flex-start;
     z-index: 1; /* Поверх слайдера */
+    transition: background 0.3s ease-in-out; /* Плавное изменение цвета */
 }
 
-.logo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Новый шрифт */
-    display: flex;
-    flex-direction: column; /* Располагаем текст вертикально */
-    align-items: center; /* Выравниваем по центру */
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    color: black;
-    text-decoration: none;
-    width: 100%; /* Логотип не выходит за границы */
-    line-height: 1; /* Уменьшаем высоту строки */
-    margin-top: 30px;
-    margin-bottom: 30px;
+.transparent {
+    background: rgba(255, 255, 255, 0.3); /* Белый прозрачный */
 }
 
-.logo p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Новый шрифт */
-    font-size: 22px; /* Делаем текст поменьше */
-    font-weight: normal;
-    margin: 0; /* Убираем отступы */
-    white-space: nowrap; /* Запрещаем перенос строки */
-    line-height: 1; /* Уменьшаем расстояние между строками */
+.black {
+    background: black; /* Черный */
+}
+
+
+
+.logoImage {
+    width: 150px; /* Укажи нужный размер */
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out; /* Плавная смена */
+
 }
 
 .logo:hover {
@@ -49,19 +43,37 @@
     padding: 20px;
 }
 
-.navList li {
-    margin-bottom: 20px;
-}
 
+/* Цвет ссылок */
 .navList a {
     text-decoration: none;
-    color: black;
     font-size: 20px;
     font-weight: normal;
     transition: 0.3s;
 }
 
+
+/* Цвет ссылок на главной */
+.transparent .navList a {
+    color: black;
+}
+
+/* Цвет ссылок на остальных страницах */
+.black .navList a {
+    color: white;
+}
+
+.navList li {
+    margin-bottom: 20px;
+}
+
+/* Исправленный стиль активной ссылки */
+.navList a.activeLink {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffcc00 !important; /* Добавляем !important, чтобы цвет не переопределялся */
+}
+
 .navList a:hover {
-    color: black; /* Оставляем текст черным */
-    text-shadow: 3px 3px 5px white; /* Добавляем белую обводку (тень) */
+    text-shadow: 3px 3px 5px white;
 }

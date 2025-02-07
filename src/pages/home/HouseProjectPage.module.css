@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+    padding: 20px 20px 0 200px; /* Добавляем равные отступы слева и справа */
+    max-width: 1600px; /* Ограничиваем ширину контейнера */
+    margin: 0 0 0 210px; /* Центрируем по горизонтали */
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-evenly; /* Равномерно распределяем карточки */
+    gap: 20px;
+    flex-wrap: wrap; /* Для адаптации на маленьких экранах */
+}

@@ -1,0 +1,36 @@
+/* src/pages/aboutUs/AboutUs.module.css */
+.aboutUs {
+    padding: 20px;
+    text-align: center; /* Центрирование текста внутри контейнера */
+}
+
+h1 {
+    font-size: 2rem; /* Устанавливаем размер шрифта */
+    font-weight: bold; /* Делаем заголовок жирным */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+}
+
+.team {
+    display: flex;
+    margin-left: 300px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Центрируем команду по горизонтали */
+}
+
+
+
+
+
+.office {
+    margin-top: 40px;
+}
+
+.officePhoto {
+    margin-bottom: 20px;
+}
+
+.officePhoto img {
+    width: 100%;
+    height: auto;
+}

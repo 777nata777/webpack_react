@@ -1,0 +1,11 @@
+.teamMember {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.teamMember img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}

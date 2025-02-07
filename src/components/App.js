@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
+import { Routes, Route  } from 'react-router-dom';
 import Header from '../pages/header/Header'; // Подключаем Header
 import HouseProjectPage from '@pages/home/HouseProjectPage'; // Страница с проектом дома
 import PublicBuildings from '../pages/publicBuildings/PublicBuildings'; // Страница общественных зданий
@@ -8,6 +8,7 @@ import Interior from '../pages/interior/Interior'; // Страница инте�
 import Landscaping from '../pages/landscaping/Landscaping'; // Страница благоустройства
 import Contacts from '../pages/contacts/Contacts'; // Страница контактов
 import MainPage from '../pages/mainPage/MainPage'; // Главная страница
+import AboutUs from '../pages/aboutUs/AboutUs'; // Добавляем AboutUs (О нас)
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path="/construction-projects" element={<ConstructionProjects />} /> {/* Страница проектов застройки */}
                 <Route path="/interior" element={<Interior />} /> {/* Страница интерьера */}
                 <Route path="/landscaping" element={<Landscaping />} /> {/* Страница благоустройства */}
+                <Route path="/about-us" element={<AboutUs />} /> {/* Новая страница "О нас" */}
                 <Route path="/contacts" element={<Contacts />} /> {/* Страница контактов */}
             </Routes>
         </>

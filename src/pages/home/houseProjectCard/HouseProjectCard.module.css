@@ -1,0 +1,26 @@
+.card {
+    background: #ffffff;  /* цвет карточки*/
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 32%; /* Устанавливаем ширину карточек в процентах */
+    min-width: 350px; /* Минимальная ширина карточки */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
