@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Franklin+Gothic+Medium&display=swap');
+
 .teamMember {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Новый шрифт */
+    color: #000000;
+    font-size: 20px;
     flex: 1 1 200px;
     text-align: center;
     padding: 20px;
     margin: 20px;
     border-radius: 20px; /* Закругление углов */
-    background: white; /* Фон для контраста */
+    background: #ffffff; /* Фон для контраста */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень вокруг карточки */
 
 }

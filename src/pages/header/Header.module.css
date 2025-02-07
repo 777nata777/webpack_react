@@ -21,7 +21,7 @@
 }
 
 .black {
-    background: black; /* Черный */
+    background: #181717; /* Черный */
 }
 
 
@@ -55,7 +55,7 @@
 
 /* Цвет ссылок на главной */
 .transparent .navList a {
-    color: black;
+    color: #181818;
 }
 
 /* Цвет ссылок на остальных страницах */
@@ -71,9 +71,9 @@
 .navList a.activeLink {
     font-weight: bold;
     text-decoration: none;
-    color: #d0bd70 !important; /* Добавляем !important, чтобы цвет не переопределялся */
+    color: #837959 !important; /* Добавляем !important, чтобы цвет не переопределялся */
 }
 
 .navList a:hover {
-    text-shadow: 3px 3px 5px white;
+    color: #837959
 }

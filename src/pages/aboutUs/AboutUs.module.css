@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Franklin+Gothic+Medium&display=swap');
+
 .aboutUs {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Новый шрифт */
     padding: 20px;
     text-align: center; /* Центрирование текста внутри контейнера */
 }
 
 h1 {
+    margin-left: 300px;
     font-size: 2rem; /* Устанавливаем размер шрифта */
     font-weight: bold; /* Делаем заголовок жирным */
     margin-bottom: 20px; /* Добавляем отступ снизу */
 }
 
 .team {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Новый шрифт */
+    color: #d2cbcb;
     display: flex;
     margin-left: 370px;
     gap: 20px;
